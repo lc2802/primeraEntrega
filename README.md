@@ -9,10 +9,11 @@ Se entrega una calculadora de IMC con 3 funciones principales.
 - llama a las dos funciones que generan el cálculo y la categorización respectivamente.
 
 ### 2. categorizar()
-- Utiliza un control de flujo** para categorizar el IMC según el cálculo obtenido en `calculo()`.
+- Utiliza un control de flujo para categorizar el IMC según el cálculo obtenido en `calculo()`.
 - La categoría generada se muestra en la consola y al final se muestra una alerta con la respuesta.
 
 ### 3. calculo()
+- Funcion flecha.
 - Realiza el cálculo del Índice de Masa Corporal (IMC) dividiendo el peso entre el cuadrado de la altura.
 
 ## **Index.html**
