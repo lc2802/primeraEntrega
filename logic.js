@@ -1,6 +1,7 @@
 function calcularIMC() {
     let peso = parseFloat(document.getElementById('peso').value);
     let altura = parseFloat(document.getElementById('altura').value);
+    const resultado = document.getElementById("resultado");
 
     if (isNaN(peso) || isNaN(altura) || peso <= 0 || altura <= 0) {
         alert("Valores no validos como parámetros");
@@ -9,6 +10,8 @@ function calcularIMC() {
 
     let calculado = calculo(peso, altura);
     let respuesta = categorizar(calculado);  
+    resultado.textContent = respuesta;
+    resultado.style.display = "block"; 
     console.log(respuesta);
 
 }
@@ -30,9 +33,7 @@ function categorizar(calculado) {
         categoria = `Su IMC es ${calculado.toFixed(2)}: Bajo peso`;
     } else {
         categoria = "Por favor, vuelva a ingresar los datos correctamente.";
-    }
-    alert(categoria);
-
+    }    
     return categoria;
 }
 
