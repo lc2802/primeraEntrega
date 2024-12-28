@@ -8,7 +8,7 @@ function calcularIMC() {
         return;
     }
 
-    let calculado = calculo(peso, altura);
+    let calculado = calculo(peso, altura/100);
     let respuesta = categorizar(calculado);  
     resultado.textContent = respuesta;
     resultado.style.display = "block"; 
